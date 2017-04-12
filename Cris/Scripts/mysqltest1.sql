@@ -1,0 +1,2 @@
+USE WHOSHOME;
+SELECT * FROM Users;

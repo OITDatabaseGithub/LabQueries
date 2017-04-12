@@ -1,2 +1,0 @@
-SELECT airlineid
-FROM airline.airline

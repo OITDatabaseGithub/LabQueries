@@ -1,0 +1,6 @@
+Select 
+ count(*) as occurrences
+from airline.on_time_performance as otp
+
+where depdelayminutes > 60
+order by occurrences desc;

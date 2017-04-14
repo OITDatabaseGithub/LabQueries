@@ -1,0 +1,9 @@
+select
+year
+, month
+, left(uc.description, 30) as airline
+, round(avg(depdelayminutes)::numeric, 2) as avg_depart_delay
+from airline.on_time_performance as otp
+where year in (2005, 2006)
+group by year, month
+order by airline desc;

@@ -1,5 +1,5 @@
 select
-, left(dapid.description, 30) as dest_airport
+ left(dapid.description, 30) as dest_airport
 , MAX(arrdelayminutes) as max_arr_delay
 from airline.on_time_performance as otp
     inner join airline.airport as dapid on otp.dest = dapid.airportid

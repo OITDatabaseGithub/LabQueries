@@ -1,0 +1,8 @@
+select
+, left(dapid.description, 30) as dest_airport
+, MAX(arrdelayminutes) as max_arr_delay
+from airline.on_time_performance as otp
+    inner join airline.airport as dapid on otp.dest = dapid.airportid
+where year in (1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999)
+group by dest_airport
+order by max_arr_delay desc;

@@ -1,0 +1,8 @@
+Select 
+ count(*) as occurrences
+ , left(uc.description, 30) as airline
+from airline.on_time_performance as otp
+    inner join airline.unique_carriers as uc on otp.uniquecarrier = uc.uniquecarriersid
+group by uc.description
+where depdelayminutes > 60
+order by airline desc;

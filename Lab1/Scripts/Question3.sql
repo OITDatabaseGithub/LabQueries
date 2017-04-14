@@ -11,4 +11,3 @@
 		dest_airport
 	ORDER BY
 		max_arrival_delay DESC
-	LIMIT 5;	

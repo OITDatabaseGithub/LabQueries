@@ -1,6 +1,5 @@
 select
-year
-, left(uc.description, 30) as airline
+left(uc.description, 30) as airline
 , count(*) as occurrences
 from airline.on_time_performance as otp
     inner join airline.unique_carriers as uc on otp.uniquecarrier = uc.uniquecarriersid

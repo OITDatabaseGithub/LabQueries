@@ -1,3 +1,0 @@
-syntax error at or near ","
-LINE 2: , left(dapid.description, 30) as dest_airport
-        ^

@@ -1,3 +1,0 @@
-missing FROM-clause entry for table "uc"
-LINE 4: , left(uc.description, 30) as airline
-               ^

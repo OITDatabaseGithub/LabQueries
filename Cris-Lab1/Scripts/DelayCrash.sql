@@ -5,7 +5,7 @@ INNER JOIN
    FROM airline.on_time_performance as otp
    WHERE depdelayminutes > 60
    GROUP BY year, month) as time
-ON performance.month = time.month AND performance.year = time.year
+ON performance.month = time.time_month AND performance.year = time.time_year
 WHERE year > 1999 AND year < 2013
 GROUP BY year, month
 ORDER BY cancellations, year, month;

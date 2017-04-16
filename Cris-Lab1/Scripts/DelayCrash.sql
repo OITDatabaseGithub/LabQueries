@@ -3,7 +3,7 @@ SELECT year, month,
   time.times_late
 FROM airline.on_time_performance as performance
 INNER JOIN
-  (SELECT otp.time_year, otp.time_month, COUNT(*) AS times_late
+  (SELECT otp.year AS time_year, otp.month AS time_month, COUNT(*) AS times_late
    FROM airline.on_time_performance as otp
    WHERE depdelayminutes > 60
    GROUP BY year, month) as time

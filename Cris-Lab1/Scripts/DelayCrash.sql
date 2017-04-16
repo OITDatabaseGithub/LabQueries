@@ -8,4 +8,4 @@ INNER JOIN
 ON performance.month = time.time_month AND performance.year = time.time_year
 WHERE year > 1999 AND year < 2013
 GROUP BY year, month
-ORDER BY cancellations, year, month;
+ORDER BY cancellations, time.times_late, year, month;

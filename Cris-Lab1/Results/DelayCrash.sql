@@ -1,3 +1,0 @@
-missing FROM-clause entry for table "time"
-LINE 1: SELECT year, month, COUNT(*) AS cancellations, time.times_la...
-                                                       ^

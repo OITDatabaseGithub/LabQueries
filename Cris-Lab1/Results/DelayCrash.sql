@@ -1,3 +1,0 @@
-column otp.time_year does not exist
-LINE 6:   (SELECT otp.time_year, otp.time_month, COUNT(*) AS times_l...
-                  ^

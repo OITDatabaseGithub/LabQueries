@@ -1,4 +1,6 @@
-SELECT year, month, COUNT(*) AS cancellations, time.times_late
+SELECT year, month,
+  COUNT(*) AS cancellations, 
+  time.times_late
 FROM airline.on_time_performance as performance
 INNER JOIN
   (otp.time_year, otp.time_month, COUNT(*) AS times_late

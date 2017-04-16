@@ -6,7 +6,7 @@ JOIN
    FROM airline.on_time_performance as otp
    JOIN airline.unique_carriers AS uc ON otp.uniquecarrier = uc.uniquecarriersid
    WHERE depdelayminutes > 60
-   GROUP BY year, month) as time;
+   GROUP BY year, month) as time
 ON performance.month = time.month AND performance.year = time.year
 GROUP BY year, month
 ORDER BY cancellations, year, month;

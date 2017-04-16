@@ -1,0 +1,3 @@
+column "time.times_late" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT year, month, COUNT(*) AS cancellations, time.times_la...
+                                                       ^

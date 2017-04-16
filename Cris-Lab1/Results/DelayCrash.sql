@@ -1,0 +1,3 @@
+column time.month does not exist
+LINE 8: ON performance.month = time.month AND performance.year = tim...
+                               ^

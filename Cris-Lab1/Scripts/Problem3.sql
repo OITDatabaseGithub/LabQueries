@@ -1,5 +1,4 @@
-SELECT
-    LEFT(ap.description, 30) AS dest_airport,
+SELECT LEFT(ap.description, 30) AS dest_airport,
     MAX(arrdelayminutes) AS max_arrival_delay
 FROM
     airline.on_time_performance AS otp

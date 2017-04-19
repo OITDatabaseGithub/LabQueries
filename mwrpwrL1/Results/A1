@@ -1,3 +1,0 @@
-syntax error at or near "WHERE"
-LINE 7: AND WHERE year IN (1995, 2000, 2001, 2002, 2003, 2004, 2005,...
-            ^
